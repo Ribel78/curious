@@ -1,3 +1,5 @@
+//output positive integers in clockwise spiral arrangement on a square lattice in console
+
 #include <iostream>
 using namespace std;
 
