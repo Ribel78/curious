@@ -1,3 +1,5 @@
+// Draw a clockwise square spiral using simple characters and output the image in console
+
 #include <iostream>
 using namespace std;
 // color black and white pixels
