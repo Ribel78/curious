@@ -1,3 +1,5 @@
+// Draw maximum size right triangle using simple characters in a square in 4 different versions and output in console
+
 #include <iostream>
 using namespace std;
 
