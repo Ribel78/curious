@@ -1,2 +1,2 @@
 # Stay curious
-Practicing C++
+Learning C++
