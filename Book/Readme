@@ -1,4 +1,9 @@
-Compiling multiple file C++ project
-Using header file (Book.h) to declare a Book class
-Creatiing a Book.cpp file to define the Book class and main.cpp to test the class objects.
-Creating a vector array of books and finding the book with minimal and maximal price.
+
+Study : Compiling multiple file C++ project. Class creation. Functions.
+Task
+1. Use header file (Book.h) to declare a Book class.
+2. Create a Book.cpp file to define the Book class properties and methods
+3. Create main.cpp to test the class objects.
+4. Create a vector array of Book objects.
+5. Manually enter each book data and print a list of the created objects data
+6. Find the book with minimum and maximum price.
