@@ -1,4 +1,4 @@
 Compiling multiple file C++ project
-Using header file (Book.h) to define a Book class
-Creatiing a Book.cpp file to define a Book class and main.cpp to test the class objects.
+Using header file (Book.h) to declare a Book class
+Creatiing a Book.cpp file to define the Book class and main.cpp to test the class objects.
 Creating a vector array of books and finding the book with minimal and maximal price.
