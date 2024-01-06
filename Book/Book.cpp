@@ -3,7 +3,7 @@
 Book::Book(){};
 Book::Book(string title, string author, int year, float price, int qty){
     setTitle(title);
-    setAuthor(title);
+    setAuthor(author);
     setYear(year);
     setPrice(price);
     setQuantity(qty);
