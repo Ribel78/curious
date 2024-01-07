@@ -3,7 +3,7 @@
 using namespace std;
 
 // find a book with minimal price - takes Books vector as argument
-void minBookPrice(auto vec_books){ //use of 'auto' in parameter declaration only available with '-std=c++20' or '-fconcepts'
+void minBookPrice(auto &vec_books){ //use of 'auto' in parameter declaration only available with '-std=c++20' or '-fconcepts'
     float minPrice = vec_books.at(0).getPrice();
     int idx = 0;
     for (int i = 1; i < vec_books.size(); i++){
@@ -15,7 +15,7 @@ void minBookPrice(auto vec_books){ //use of 'auto' in parameter declaration only
     cout << "The book \"" << vec_books.at(idx).getTitle() << "\" has minimum price of:" << minPrice << endl;
 }
 // find a book with maximal price - takes Books vector as argument
-void maxBookPrice(auto vec_books){ //use of 'auto' in parameter declaration only available with '-std=c++20' or '-fconcepts'
+void maxBookPrice(auto &vec_books){ //use of 'auto' in parameter declaration only available with '-std=c++20' or '-fconcepts'
     float maxPrice = vec_books.at(0).getPrice();
     int idx = 0;
     for (int i = 1; i < vec_books.size(); i++){
@@ -25,6 +25,19 @@ void maxBookPrice(auto vec_books){ //use of 'auto' in parameter declaration only
         }
     }
     cout << "The book \"" << vec_books.at(idx).getTitle() << "\" has maximum price of:" << maxPrice << endl;
+}
+// find books by author name
+void findBookByAuthor(auto &vec_books){
+    string author;
+    cout << "Find books by author name: ";
+    getline(cin >> ws, author);
+    for (int i = 0; i < vec_books.size(); i++){
+        if (author == vec_books.at(i).getAuthor())
+        {
+            vec_books.at(i).printData();
+        }
+        
+    }
 }
 
 int main(){
@@ -48,6 +61,8 @@ int main(){
     // Get Book with Min and Max Price
     minBookPrice(books);
     maxBookPrice(books);
-    
+    // Find Books by Author's Name
+    findBookByAuthor(books);
+
     return 0;
 }
